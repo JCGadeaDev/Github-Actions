@@ -21,3 +21,6 @@ jobs:
 
       - name: Publicar versión
         run: echo "Publicar versión"
+
+       name: Publicar versión 2
+      run: echo "Publicar versión 2"
