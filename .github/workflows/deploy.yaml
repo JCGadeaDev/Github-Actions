@@ -1,15 +1,23 @@
 name: "Deploy Prueba de Github Actions"
 
 on:
-push:
-branches: ["main"]
+  push:
+    branches: ["main"]
 
 jobs:
-deploy-prueba:
-runs-on: ubuntu-latest
-step:
--uses: actions/checkout@v4
--run: echo "Hacemos pull del codigo"
--run: echo "Correr migraciones"
--run: echo "Generar binario"
--run: echo "Publicar version"
+  deploy-prueba:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Hacemos pull del código
+        run: echo "Hacemos pull del código"
+
+      - name: Correr migraciones
+        run: echo "Correr migraciones"
+
+      - name: Generar binario
+        run: echo "Generar binario"
+
+      - name: Publicar versión
+        run: echo "Publicar versión"
