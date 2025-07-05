@@ -24,3 +24,11 @@ jobs:
 
       - name: Publicar versión 2
         run: echo "Publicar versión 2"
+
+  deploy-prueba2:
+      needs: deploy-prueba
+      runs-on: ubuntu-latest
+
+  steps:
+    - name: hola mundo
+      run: echo "Hola mundo segundo"
