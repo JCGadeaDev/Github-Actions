@@ -27,6 +27,7 @@ jobs:
 
 
   deploy-prueba2:
+    if: ${{github.ref == 'refs//heads/main'}}
     needs: deploy-prueba
     runs-on: ubuntu-latest
     steps:  # 👈 Aquí debe ir steps correctamente indentado
